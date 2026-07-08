@@ -3,10 +3,11 @@
 import os
 import argparse
 import re
+import pandas as pd
 
-def test_calcul(input_data):
-    new_input = int(input_data)*2
-    return str(new_input)
+def read_table(input):
+    f = pd.read_table(input)
+    print(f)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(prog="Test", description="Main test program")
@@ -15,7 +16,5 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    print ("Welcome ! \n" + args.input)
-    print("Processing...")
-    New_data = test_calcul(args.input)
-    print("Output is \n" + New_data)
+    read_table(args.input)
+
