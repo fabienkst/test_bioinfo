@@ -1,4 +1,4 @@
-#!/Users/ggw_974_1/.pyenv/shims/python
+#!/usr/local/bin/python
 
 import matplotlib.pyplot as plt
 import pandas as pd
